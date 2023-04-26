@@ -1,8 +1,9 @@
-import "./globals.css";
-
+import { CMainLayout } from "@/common/components/layouts";
 import { Source_Serif_4 } from "next/font/google";
 
-const serif4 = Source_Serif_4({
+import "./globals.css";
+
+const sourceSerif4 = Source_Serif_4({
     subsets: ["latin"],
     display: "swap",
     variable: "--font-source-serif-4",
@@ -19,8 +20,16 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={serif4.variable}>
-            <body>{children}</body>
+        <html lang="en" className={sourceSerif4.variable}>
+            <head>
+                <link
+                    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+                    rel="stylesheet"
+                ></link>
+            </head>
+            <body>
+                <CMainLayout>{children}</CMainLayout>
+            </body>
         </html>
     );
 }
