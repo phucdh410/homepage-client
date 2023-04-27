@@ -1,3 +1,4 @@
+import { raleway, roboto } from "@/app/fonts";
 import { CLabelSection } from "@/common/components/others";
 import dayjs from "dayjs";
 
@@ -71,7 +72,7 @@ export const MNewPosts = () => {
         <section>
             <CLabelSection label="Bài viết mới" />
             <div
-                className="rounded-[20px] bg-white overflow-hidden"
+                className="rounded-[20px] bg-white overflow-hidden mb-8"
                 style={{
                     boxShadow: "10px 10px 60px rgba(19, 70, 131, 0.1)",
                     backdropFilter: "blur(2.5px)",
@@ -89,19 +90,25 @@ export const MNewPosts = () => {
                         <span className="material-icons-outlined text-primary">
                             schedule
                         </span>
-                        <p className="text-primary font-semibold text-[12px] uppercase">
-                            {dayjs(MOCK_DATA[0].created_at).format("MM")}
+                        <p
+                            className={`text-primary font-semibold text-[13px] uppercase mr-4 ${roboto.className}`}
+                        >
+                            {dayjs(MOCK_DATA[0].created_at).fromNow()}
                         </p>
                         <span className="material-icons-outlined text-primary">
                             local_offer
                         </span>
-                        <p className="text-primary font-semibold text-[12px] uppercase">
+                        <p
+                            className={`text-primary font-semibold text-[13px] uppercase ${roboto.className}`}
+                        >
                             {MOCK_DATA[0].category
                                 ? MOCK_DATA[0].category?.title
                                 : "<CATEGORY>"}
                         </p>
                     </div>
-                    <h4 className="text-primary font-bold text-[18px] leading-[21px]">
+                    <h4
+                        className={`text-primary font-bold text-[18px] leading-[22px] ${raleway.className}`}
+                    >
                         {MOCK_DATA[0].title}
                     </h4>
                 </div>

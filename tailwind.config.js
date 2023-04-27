@@ -11,6 +11,8 @@ module.exports = {
         extend: {
             fontFamily: {
                 serif4: ["var(--font-source-serif-4)"],
+                roboto: ["var(--font-roboto)"],
+                raleway: ["var(--font-raleway)"],
             },
             boxShadow: {
                 headerShadow: "5px 3px 30px rgba(19, 70, 131, 0.1)",

@@ -1,13 +1,13 @@
 import { CMainLayout } from "@/common/components/layouts";
-import { Source_Serif_4 } from "next/font/google";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+import vi from "dayjs/locale/vi";
+
+dayjs.extend(relativeTime);
+dayjs.locale(vi);
 
 import "./globals.css";
-
-const sourceSerif4 = Source_Serif_4({
-    subsets: ["latin"],
-    display: "swap",
-    variable: "--font-source-serif-4",
-});
+import { raleway, roboto, sourceSerif4 } from "./fonts";
 
 export const metadata = {
     title: "Cái web của tui",
@@ -20,7 +20,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={sourceSerif4.variable}>
+        <html
+            lang="en"
+            className={`${sourceSerif4.variable} ${roboto.variable} ${raleway.variable}`}
+        >
             <head>
                 <link
                     href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
