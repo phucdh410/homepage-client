@@ -5,6 +5,7 @@ import {
     MNotifications,
     MOutstanding,
     MPosts,
+    MRelatedPost,
 } from "@/modules/Home";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
         <>
             <MNotifications />
 
-            <div className="container mx-auto grid grid-cols-3 gap-8 mt-7">
+            <div className="container grid grid-cols-3 gap-8 mt-7">
                 <div className="col-span-2">
                     <MNewPosts />
                     <MPosts />
@@ -24,6 +25,8 @@ export default function Home() {
             </div>
 
             <MEvent />
+
+            <MRelatedPost />
         </>
     );
 }

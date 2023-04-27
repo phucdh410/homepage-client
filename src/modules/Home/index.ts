@@ -4,3 +4,4 @@ export * from "./MLinks";
 export * from "./MNewPosts";
 export * from "./MEvent";
 export * from "./MPosts";
+export * from "./MRelatedPosts";

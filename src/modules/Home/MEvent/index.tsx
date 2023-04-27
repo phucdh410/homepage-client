@@ -17,7 +17,7 @@ const MOCK_DATA = {
 export const MEvent = () => {
     return (
         <section>
-            <div className="container mt-8 mx-auto relative overflow-hidden rounded-[20px] aspect-[1306/178]">
+            <div className="container mt-8 relative overflow-hidden rounded-[20px] aspect-[1306/178]">
                 <img
                     src={MOCK_DATA.file.url}
                     alt=""

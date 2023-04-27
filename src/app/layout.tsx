@@ -7,7 +7,7 @@ dayjs.extend(relativeTime);
 dayjs.locale(vi);
 
 import "./globals.css";
-import { raleway, roboto, sourceSerif4 } from "./fonts";
+import { montserrat, raleway, roboto, sourceSerif4 } from "./fonts";
 
 export const metadata = {
     title: "Cái web của tui",
@@ -22,7 +22,7 @@ export default function RootLayout({
     return (
         <html
             lang="en"
-            className={`${sourceSerif4.variable} ${roboto.variable} ${raleway.variable}`}
+            className={`${sourceSerif4.variable} ${roboto.variable} ${raleway.variable} ${montserrat.variable}`}
         >
             <head>
                 <link
