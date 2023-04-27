@@ -18,7 +18,7 @@ export const CMainLayout: React.FC<ICMainLayoutProps> = ({ children }) => {
     return (
         <>
             <CHeader />
-            <main className={`mt-[80px]`}>
+            <main className={`mt-[80px] mb-96`}>
                 <div className="mx-auto">{children}</div>
             </main>
             <footer></footer>

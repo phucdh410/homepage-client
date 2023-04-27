@@ -1,4 +1,5 @@
-import { MNotifications, MOutstanding } from "@/common/modules/Home";
+import { MNotifications, MOutstanding } from "@/modules/Home";
+import { MLinks } from "@/modules/Home/MLinks";
 
 export default function Home() {
     return (
@@ -9,6 +10,7 @@ export default function Home() {
                 <div className="col-span-2">asda</div>
                 <div className="col-span-1">
                     <MOutstanding />
+                    <MLinks />
                 </div>
             </div>
         </>
