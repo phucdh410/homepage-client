@@ -1,0 +1,13 @@
+.swiper {
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background: #c2cbd1;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(1.5px);
+            opacity: 1;
+            &.swiper-pagination-bullet-active {
+                background: #124874;
+            }
+        }
+    }
+}

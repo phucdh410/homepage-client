@@ -10,6 +10,7 @@ dayjs.extend(relativeTime);
 dayjs.locale(vi);
 
 import "swiper/css";
+import "../styles/index.scss";
 import "./globals.css";
 
 export const metadata = {
