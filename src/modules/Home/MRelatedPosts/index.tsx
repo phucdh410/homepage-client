@@ -1,4 +1,4 @@
-import { montserrat, raleway } from "@/app/fonts";
+import { raleway, sourceSerif4 } from "@/app/fonts";
 import Link from "next/link";
 import { MRelatedItem } from "./MRelatedItem";
 
@@ -47,7 +47,7 @@ export const MRelatedPost = () => {
             <div className="container mt-8">
                 <div className="flex justify-between items-center mb-[30px]">
                     <h5
-                        className={`${montserrat.className} text-primary font-bold text-[18px] leading-[22px]`}
+                        className={`${sourceSerif4.className} text-primary font-bold text-[18px] leading-[22px]`}
                     >
                         Bài viết vừa xem
                     </h5>

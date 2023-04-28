@@ -30,11 +30,11 @@ export const MRelatedItem: React.FC<IMRelatedItemProps> = ({ data }) => {
                     </p>
                 </div>
                 <h3
-                    className={`${sourceSerif4.className} text-primary font-bold text-[25px] text-`}
+                    className={`${sourceSerif4.className} text-primary font-bold text-[25px] mb-[25px]`}
                 >
                     {data.title}
                 </h3>
-                <p className="text-[16px] leading-[26px] tracking-[0.03em]">
+                <p className="text-[16px] leading-[26px] tracking-[0.03em] text-[#5B5B5B]">
                     {data.description}
                 </p>
             </div>
