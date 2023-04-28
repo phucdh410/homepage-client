@@ -43,21 +43,23 @@ export const MOutstanding = () => {
                                     className={`text-newRed font-medium text-[50px] leading-[38px] tracking-[0.03em] ${raleway.className}`}
                                 >{`${i + 1}.`}</h1>
                                 <p
-                                    className={`text-primary text-[20px] font-bold text-justify leading-[27px] ${sourceSerif4.className}`}
+                                    className={`text-primary text-[20px] font-bold text-justify leading-[27px] ${sourceSerif4.className} hover:underline`}
                                 >
                                     {e.title}
                                 </p>
                             </div>
                         </Link>
                     ))}
-                    <button
-                        className={`text-[14px] italic flex justify-end items-center mt-[33px] leading-[21px] text-[#0054A5] font-bold ${raleway.className}`}
-                    >
-                        Xem thêm
-                        <span className="material-icons-outlined">
-                            arrow_right
-                        </span>
-                    </button>
+                    <div className=" flex justify-end items-center">
+                        <button
+                            className={`text-[14px] flex justify-end items-center italic mt-[33px] leading-[21px] text-[#0054A5] font-bold ${raleway.className}`}
+                        >
+                            Xem thêm
+                            <span className="material-icons-outlined">
+                                arrow_right
+                            </span>
+                        </button>
+                    </div>
                 </ul>
             </div>
         </section>
