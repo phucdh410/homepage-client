@@ -5,3 +5,4 @@ export * from "./MNewPosts";
 export * from "./MEvent";
 export * from "./MPosts";
 export * from "./MRelatedPosts";
+export * from "./MLogoSections";

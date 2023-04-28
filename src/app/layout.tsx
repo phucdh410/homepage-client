@@ -1,13 +1,16 @@
 import { CMainLayout } from "@/common/components/layouts";
+
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import vi from "dayjs/locale/vi";
 
+import { montserrat, raleway, roboto, sourceSerif4 } from "./fonts";
+
 dayjs.extend(relativeTime);
 dayjs.locale(vi);
 
+import "swiper/css";
 import "./globals.css";
-import { montserrat, raleway, roboto, sourceSerif4 } from "./fonts";
 
 export const metadata = {
     title: "Cái web của tui",

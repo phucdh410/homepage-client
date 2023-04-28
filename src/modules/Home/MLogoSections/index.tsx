@@ -1,3 +1,7 @@
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
 const MOCK_DATA = [
     { id: "1", name: "Tiếng Anh", file: { url: "./images/tieng-anh.png" } },
     {
@@ -28,7 +32,13 @@ const MOCK_DATA = [
 export const MLogoSections = () => {
     return (
         <section>
-            <div className="container mt-8"></div>
+            <div className="container mt-8">
+                <Swiper spaceBetween={50} slidesPerView={5} freeMode>
+                    {MOCK_DATA.map((e, i) => (
+                        <SwiperSlide key={e.id}>{`Slide ${i}`}</SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
         </section>
     );
 };

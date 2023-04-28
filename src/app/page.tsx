@@ -1,6 +1,7 @@
 import {
     MEvent,
     MLinks,
+    MLogoSections,
     MNewPosts,
     MNotifications,
     MOutstanding,
@@ -27,6 +28,8 @@ export default function Home() {
             <MEvent />
 
             <MRelatedPost />
+
+            <MLogoSections />
         </>
     );
 }
