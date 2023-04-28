@@ -53,7 +53,7 @@ export const MRelatedPost = () => {
                     </h5>
                     <Link
                         href=""
-                        className={`rounded-[30px] text-primary border-[2px] border-solid border-[#124874] py-4 px-[30px] uppercase font-bold text-[16px] leading-[19px] ${raleway.className}`}
+                        className={`transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-[30px] text-primary border-[2px] border-solid border-[#124874] py-4 px-[30px] uppercase font-bold text-[16px] leading-[19px] ${raleway.className}`}
                     >
                         xem thêm
                     </Link>
