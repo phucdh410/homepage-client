@@ -1,5 +1,6 @@
-import { sourceSerif4 } from "@/app/fonts";
 import dayjs from "dayjs";
+
+import { sourceSerif4 } from "@/app/fonts";
 
 const MOCK_DATA = {
     created_date: "2023-04-23 21:00:00",

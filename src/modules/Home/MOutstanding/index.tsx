@@ -1,5 +1,6 @@
-import { raleway, sourceSerif4 } from "@/app/fonts";
 import Link from "next/link";
+
+import { raleway, sourceSerif4 } from "@/app/fonts";
 
 const MOCK_DATA = [
     {

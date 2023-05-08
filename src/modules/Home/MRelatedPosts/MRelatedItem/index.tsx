@@ -1,6 +1,8 @@
-import { sourceSerif4 } from "@/app/fonts";
-import { IMRelatedItemProps } from "./types";
 import dayjs from "dayjs";
+
+import { sourceSerif4 } from "@/app/fonts";
+
+import { IMRelatedItemProps } from "./types";
 
 export const MRelatedItem: React.FC<IMRelatedItemProps> = ({ data }) => {
     return (

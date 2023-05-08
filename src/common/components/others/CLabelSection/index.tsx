@@ -1,4 +1,5 @@
 import { raleway } from "@/app/fonts";
+
 import { ICLabelSectionProps } from "./types";
 
 export const CLabelSection: React.FC<ICLabelSectionProps> = ({ label }) => {

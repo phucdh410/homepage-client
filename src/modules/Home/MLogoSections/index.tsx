@@ -5,8 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-import "./style.scss";
 import { swiperConfig } from "./swiper.config";
+
+import "./style.scss";
 
 const MOCK_DATA = [
     {

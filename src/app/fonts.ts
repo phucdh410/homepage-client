@@ -1,4 +1,4 @@
-import { Source_Serif_4, Roboto, Raleway, Montserrat } from "next/font/google";
+import { Montserrat, Raleway, Roboto, Source_Serif_4 } from "next/font/google";
 
 export const sourceSerif4 = Source_Serif_4({
     subsets: ["latin"],

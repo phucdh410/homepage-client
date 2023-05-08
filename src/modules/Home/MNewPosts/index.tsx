@@ -1,6 +1,7 @@
+import dayjs from "dayjs";
+
 import { raleway, roboto } from "@/app/fonts";
 import { CLabelSection } from "@/common/components/others";
-import dayjs from "dayjs";
 
 const MOCK_DATA = [
     {
