@@ -68,7 +68,10 @@ const MOCK_DATA = [
     },
 ];
 
-export const MNewPosts = () => {
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+export const MNewPosts = async () => {
+    await sleep(5000);
     return (
         <section>
             <CLabelSection label="Bài viết mới" />

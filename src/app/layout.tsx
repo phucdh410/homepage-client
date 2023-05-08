@@ -11,6 +11,7 @@ import { montserrat, raleway, roboto, sourceSerif4 } from "./fonts";
 dayjs.extend(relativeTime);
 dayjs.locale(vi);
 
+import "react-loading-skeleton/dist/skeleton.css";
 import "swiper/css";
 import "../styles/index.scss";
 import "./globals.css";
@@ -42,3 +43,12 @@ export default function RootLayout({
         </html>
     );
 }
+
+// <title>{{ $title }}</title>
+// <meta name="description" content="{{ $description }}">
+// <meta property="og:title" content="{{ $title }}"/>
+// <meta property="og:type" content="{{ $type }}"/>
+// <meta property="og:url" content="{{ url()->current() }}"/>
+// <meta property="og:image" content="{{ $image }}"/>
+// <meta property="og:image:alt" content="{{ $imageAlt }}"/>
+// <meta property="og:description" content="{{ $description }}"/>

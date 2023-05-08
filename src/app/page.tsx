@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import {
     MEvent,
     MLinks,
@@ -9,6 +11,8 @@ import {
     MRelatedPost,
 } from "@/modules/Home";
 
+import Loading from "./loading";
+
 export default function Home() {
     return (
         <>
@@ -16,7 +20,10 @@ export default function Home() {
 
             <div className="container grid grid-cols-3 gap-8 mt-7">
                 <div className="col-span-2">
-                    <MNewPosts />
+                    <Suspense fallback={<Loading />}>
+                        {/* @ts-expect-error */}
+                        <MNewPosts />
+                    </Suspense>
                     <MPosts />
                 </div>
                 <div className="col-span-1">
