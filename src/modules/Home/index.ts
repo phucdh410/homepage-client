@@ -6,3 +6,4 @@ export * from "./MNotifications";
 export * from "./MOutstanding";
 export * from "./MPosts";
 export * from "./MRelatedPosts";
+export * from "./MStatistics";

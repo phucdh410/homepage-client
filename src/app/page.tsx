@@ -9,6 +9,7 @@ import {
     MOutstanding,
     MPosts,
     MRelatedPost,
+    MStatistics,
 } from "@/modules/Home";
 
 import Loading from "./loading";
@@ -17,6 +18,8 @@ export default function Home() {
     return (
         <>
             <MNotifications />
+
+            {/* <MStatistics /> */}
 
             <div className="container grid grid-cols-3 gap-8 mt-7">
                 <div className="col-span-2">
