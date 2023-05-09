@@ -6,14 +6,14 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 import { CMainLayout } from "@/common/components/layouts";
 
-import { montserrat, raleway, roboto, sourceSerif4 } from "./fonts";
+import { montserrat, raleway, roboto, sourceSerif4 } from "../fonts";
 
 dayjs.extend(relativeTime);
 dayjs.locale(vi);
 
 import "react-loading-skeleton/dist/skeleton.css";
 import "swiper/css";
-import "../styles/index.scss";
+import "../../styles/index.scss";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -28,7 +28,6 @@ export default function RootLayout({
 }) {
     return (
         <html
-            lang="en"
             className={`${sourceSerif4.variable} ${roboto.variable} ${raleway.variable} ${montserrat.variable}`}
         >
             <head>

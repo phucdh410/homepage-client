@@ -14,7 +14,14 @@ import {
 
 import Loading from "./loading";
 
-export default function Home() {
+interface IHomePageProps {
+    params: {
+        lang: string;
+    };
+}
+
+const Home: React.FC<IHomePageProps> = ({ params: { lang } }) => {
+    console.log(lang);
     return (
         <>
             <MNotifications />
@@ -42,4 +49,6 @@ export default function Home() {
             <MLogoSections />
         </>
     );
-}
+};
+
+export default Home;
