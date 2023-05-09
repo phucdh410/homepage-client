@@ -14,14 +14,7 @@ import {
 
 import Loading from "./loading";
 
-interface IHomePageProps {
-    params: {
-        lang: string;
-    };
-}
-
-const Home: React.FC<IHomePageProps> = ({ params: { lang } }) => {
-    console.log(lang);
+const Home = () => {
     return (
         <>
             <MNotifications />
