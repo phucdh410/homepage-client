@@ -14,10 +14,17 @@ import {
 
 import Loading from "./loading";
 
-const Home = () => {
+interface IHomePageProps {
+    params: {
+        lang: string;
+    };
+}
+
+const Home = ({ params }: IHomePageProps) => {
     return (
         <>
-            <MNotifications />
+            {/* @ts-expect-error */}
+            <MNotifications lang={params.lang} />
 
             {/* <MStatistics /> */}
 
@@ -25,7 +32,7 @@ const Home = () => {
                 <div className="col-span-2">
                     <Suspense fallback={<Loading />}>
                         {/* @ts-expect-error */}
-                        <MNewPosts />
+                        <MNewPosts lang={params.lang} />
                     </Suspense>
                     <MPosts />
                 </div>

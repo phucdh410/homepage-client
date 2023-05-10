@@ -1,5 +1,9 @@
 import Marquee from "react-fast-marquee";
 
+import { getDictionary } from "@/app/[lang]/dictionaries";
+
+import { IMNotificationsProps } from "./types";
+
 const MOCK_NOTI = [
     {
         id: "c130760e-e7bc-40cf-ac7d-97e26ee7775c",
@@ -38,11 +42,12 @@ const MOCK_NOTI = [
     },
 ];
 
-export const MNotifications = () => {
+export const MNotifications = async ({ lang }: IMNotificationsProps) => {
+    const d = await getDictionary(lang);
     return (
         <section className="mt-10 text-center">
-            <h1 className="text-primary font-bold text-[25px] leading-9 mb-4">
-                THÔNG BÁO MỚI NHẤT
+            <h1 className="text-primary uppercase font-bold text-[25px] leading-9 mb-4">
+                {d.label.notifications}
             </h1>
             <div className="flex flex-col gap-[17px]">
                 <div

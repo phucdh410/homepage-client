@@ -1,7 +1,10 @@
 import dayjs from "dayjs";
 
+import { getDictionary } from "@/app/[lang]/dictionaries";
 import { raleway, roboto } from "@/app/fonts";
 import { CLabelSection } from "@/common/components/others";
+
+import { IMNewPosts } from "./types";
 
 const MOCK_DATA = [
     {
@@ -70,7 +73,8 @@ const MOCK_DATA = [
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-export const MNewPosts = async () => {
+export const MNewPosts = async ({ lang }: IMNewPosts) => {
+    const d = await getDictionary(lang);
     await sleep(2000);
     return (
         <section>
