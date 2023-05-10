@@ -11,6 +11,8 @@ import { montserrat, raleway, roboto, sourceSerif4 } from "../fonts";
 dayjs.extend(relativeTime);
 dayjs.locale(vi);
 
+import { locales } from "../i18n";
+
 import "react-loading-skeleton/dist/skeleton.css";
 import "swiper/css";
 import "../../styles/index.scss";
@@ -23,14 +25,19 @@ export const metadata: Metadata = {
 };
 //#endregion
 
+export async function generateStaticParams() {
+    return locales.map((locale) => ({ lang: locale }));
+}
+
 interface IRootLayoutProps {
     children: React.ReactNode;
     params: { lang: string };
 }
 
-export default function RootLayout({ children }: IRootLayoutProps) {
+export default function RootLayout({ children, params }: IRootLayoutProps) {
     return (
         <html
+            lang={params.lang}
             className={`${sourceSerif4.variable} ${roboto.variable} ${raleway.variable} ${montserrat.variable}`}
         >
             <head>
